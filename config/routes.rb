@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   root "groups#index"
 
   resources :groups, only: [:index, :new, :create] do
-    resources :transacs, only: [:index, :new, :create]
+    resources :transacs, only: [:index]
   end
+
+  resources :transacs, only: [:new, :create]
 end
