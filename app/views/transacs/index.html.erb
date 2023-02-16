@@ -1,1 +1,8 @@
 <h1>Transacs index</h1>
+Total amount: <%= @group.total_amount %><br />
+<% @group_transacs.each do |transac| %>
+  <%= transac.name %>
+  <%= transac.amount %> <br />
+<% end %>
+
+<%= link_to "Add new transac", new_transac_path %>

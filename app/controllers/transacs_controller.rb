@@ -1,6 +1,7 @@
 class TransacsController < ApplicationController
   def index
-
+    @group = Group.find(params[:group_id])
+    @group_transacs = Transac.where(group: @group).order(created_at: :desc)
   end
 
   def new
