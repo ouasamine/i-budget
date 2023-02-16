@@ -1,10 +1,25 @@
-<h1>Groups Index</h1>
-<% @groups.each do |group| %>
-  <a href="<%= group_transacs_path(group) %>">
-    Icon: <%= group.icon %>
-    Name: <%= group.name %>
-    Amount: <%= group.total_amount %>
-  </a>
-<% end %>
+<header id="page-header">
+  <nav><a href="#"><img src="/assets/home_icon.png"></a></nav>
+  <h1>Transactions</h1>
+</header>
 
-<%= link_to "Add a new category", new_group_path %>
+<section>
+  <div class="cards-container">
+    <% @groups.each do |group| %>
+    <a class="card-link-wrapper" href="<%= group_transacs_path(group) %>">
+      <div class="card">
+        <div class="img-plchldr column"><img src="<%= group.icon %>" alt="Transaction icon"></div>
+        <div class="column">
+          <span><%= group.name %></span>
+          <span><%= group.created_at %></span>
+        </div>
+        <div class="column">
+          <span><%= group.total_amount %></span>
+        </div>
+      </div>
+    </a>
+    <% end %>
+  </div>
+
+  <%= link_to "Add a new category", new_group_path %>
+</section>
