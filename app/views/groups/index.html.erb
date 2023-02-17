@@ -1,0 +1,25 @@
+<header id="page-header" class="title">
+  <h1>Categories</h1>
+  <%= button_to image_tag("exit.png"), destroy_user_session_path, method: :delete, class: "butt-icon" %>
+</header>
+
+<section>
+  <div class="cards-container">
+    <% @groups.each do |group| %>
+    <a class="card-link-wrapper" href="<%= group_transacs_path(group) %>">
+      <div class="card">
+        <div class="img-plchldr column"><img src="<%= group.icon %>"></div>
+        <div class="column">
+          <span><%= group.name %></span>
+          <span class="date-stamp"><%= group.date %></span>
+        </div>
+        <div class="column last-col">
+          <span class="sec-text"><%= group.total_amount %></span>
+        </div>
+      </div>
+    </a>
+    <% end %>
+  </div>
+
+  <%= link_to "ADD CATEGORY", new_group_path, class: "bttn" %>
+</section>

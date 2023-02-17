@@ -1,0 +1,32 @@
+<header id="page-header" class="title">
+  <h1>Sign up</h1>
+</header>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <%= f.text_field :name, placeholder: "Name", autofocus: true, autocomplete: "name" %>
+  </div>
+
+  <div class="field">
+    <%= f.email_field :email, placeholder: "Email", autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password, placeholder: "Password", autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password_confirmation, placeholder: "Retype Password", autocomplete: "new-password" %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up", class: "bttn"  %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
