@@ -67,7 +67,12 @@ To setup the project follow the steps:
     bundle install
     ``` 
 
-3. Setup the app's database
+3. Create the app's database
+    ```
+    rails db:create
+    ``` 
+
+4. Setup the app's database
     ```
     rails db:setup
     ``` 
@@ -80,10 +85,10 @@ In the project directory, you can run:
 - ```
   rails server
   ```
-  Runs the app server
+  Runs the app local server
 
 - ```
-  rubocop
+  bundle exec rspec
   ```
   Launches the test runner.
 
@@ -97,7 +102,8 @@ In the project directory, you can run:
 
 ## Future Feature
 
-- **_Coming soon!**
+- **Create a user profile**
+- **Create a desktop version**
 
 ## Contributing 
 
