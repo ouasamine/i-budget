@@ -53,7 +53,7 @@ body {
   bottom: 0;
   display: block;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: proxima-nova, sans-serif;
   background-color: var(--sec-color);
   color: #fff;
   text-decoration: none;
