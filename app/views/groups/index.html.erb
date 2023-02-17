@@ -8,7 +8,7 @@
     <% @groups.each do |group| %>
     <a class="card-link-wrapper" href="<%= group_transacs_path(group) %>">
       <div class="card">
-        <div class="img-plchldr column"><img src="<%= group.icon %>" alt="Transaction icon"></div>
+        <div class="img-plchldr column"><img src="<%= group.icon %>"></div>
         <div class="column">
           <span><%= group.name %></span>
           <span class="date-stamp"><%= group.date %></span>
