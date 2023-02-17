@@ -32,7 +32,7 @@ body {
   padding-bottom: 70px;
   position: relative;
   background-color: #eaeaea;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: proxima-nova, sans-serif;
   color: var(--text-color);
 }
 
