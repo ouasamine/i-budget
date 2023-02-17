@@ -11,10 +11,10 @@ class GroupsController < ApplicationController
   def create
     @new_group = Group.new(group_params)
 
-    if @new_group.save
-      flash[:success] = "Category created successfully."
-      redirect_to groups_path
-    end
+    return unless @new_group.save
+
+    flash[:success] = 'Category created successfully.'
+    redirect_to groups_path
   end
 
   private

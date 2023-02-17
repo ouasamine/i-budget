@@ -110,4 +110,6 @@ If you like this project give it a star!
 
 ## License 
 
+Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
+
 This project is [MIT](./LICENSE) licensed.

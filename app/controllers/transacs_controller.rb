@@ -13,10 +13,10 @@ class TransacsController < ApplicationController
   def create
     @new_transac = Transac.new(transac_params)
 
-    if @new_transac.save
-      flash[:success] = "Transaction created successfully."
-      redirect_to group_transacs_path(transac_params[:group_id])
-    end
+    return unless @new_transac.save
+
+    flash[:success] = 'Transaction created successfully.'
+    redirect_to group_transacs_path(transac_params[:group_id])
   end
 
   private
