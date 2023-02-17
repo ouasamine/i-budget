@@ -4,6 +4,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -36,6 +37,10 @@
 - **Register an account**
 - **Create categories and transactions**
 - **Metrics about user transactions**
+
+## Live Demo 
+
+- [Live Demo Link](https://ibudget.onrender.com/groups/new)
 
 ## Getting Started 
 

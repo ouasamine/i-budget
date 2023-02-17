@@ -1,5 +1,5 @@
 <header id="page-header">
-  <nav><a href="<%= groups_path %>"><img src="/assets/home_icon.png"></a></nav>
+  <nav><a href="<%= groups_path %>"><%= image_tag("home_icon.png") %></a></nav>
   <h1>Transactions</h1>
   <%= button_to image_tag("exit.png"), destroy_user_session_path, method: :delete, class: "butt-icon" %>
 </header>
