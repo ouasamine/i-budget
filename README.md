@@ -22,6 +22,8 @@
 
 **iBudget** is a web mobile friendly app that supports user registration and authentication using the Devise gem, a user can create his own account on the app and after logging in she/he will be able to add categories and then add transactions under those categories, the app provide some metrics like the total value of transactions under each category, the app was build using Ruby on Rails framework.
 
+Here is a [video](https://www.loom.com/share/88f3a758b7864c81a8882eaa21ff25c2) presentation of the final version of the app
+
 ## Built With
 
 ### Tech Stack 
@@ -119,8 +121,8 @@ If you like this project give it a star!
 
 - Microverse ❤️ 
 
-## License 
-
 Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
+
+## License 
 
 This project is [MIT](./LICENSE) licensed.
