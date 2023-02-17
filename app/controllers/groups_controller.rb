@@ -1,4 +1,5 @@
 class GroupsController < ApplicationController
+  before_action :require_login
   def index
     @groups = Group.where(user: current_user)
   end
@@ -19,6 +20,6 @@ class GroupsController < ApplicationController
   private
 
   def group_params
-    params.require(:group).permit(:name, :user_id)
+    params.require(:group).permit(:name, :icon, :user_id)
   end
 end

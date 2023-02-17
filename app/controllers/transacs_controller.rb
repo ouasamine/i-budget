@@ -1,4 +1,5 @@
 class TransacsController < ApplicationController
+  before_action :require_login
   def index
     @group = Group.find(params[:group_id])
     @group_transacs = Transac.where(group: @group).order(created_at: :desc)

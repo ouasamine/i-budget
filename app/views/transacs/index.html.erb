@@ -1,27 +1,28 @@
 <header id="page-header">
-  <nav><a href="#"><img src="/assets/home_icon.png"></a></nav>
+  <nav><a href="<%= groups_path %>"><img src="/assets/home_icon.png"></a></nav>
   <h1>Transactions</h1>
+  <%= button_to image_tag("exit.png"), destroy_user_session_path, method: :delete, class: "butt-icon" %>
 </header>
 
 <section>
   <div class="top-card">
-    <span>Total amount:</span> 
-    <span><%= @group.total_amount %></span>
+    <span class="primary-text">Total amount</span> 
+    <span class="sec-text"><%= @group.total_amount %></span>
   </div>
 
   <div class="cards-container">
     <% @group_transacs.each do |transac| %>
       <div class="card">
         <div class="column">
-          <span><%= transac.name %></span>
-          <span><%= transac.created_at %></span>
+          <span class="primary-text"><%= transac.name %></span>
+          <span class="date-stamp"><%= transac.get_date %></span>
         </div>
-        <div class="column">
-          <span><%= transac.amount %></span>
+        <div class="column last-col">
+          <span class="sec-text"><%= transac.amount %></span>
         </div>
       </div>
     <% end %>
   </div>
 
-  <%= link_to "Add new transac", new_transac_path %>
+  <%= link_to "ADD TRANSACTION", new_group_path, class: "bttn" %>
 </section>

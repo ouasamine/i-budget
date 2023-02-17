@@ -10,4 +10,12 @@ class Group < ApplicationRecord
     end
     total
   end
+
+  def get_date
+    date = ""
+    date += created_at.day.to_s + " "
+    date += Date::ABBR_MONTHNAMES[created_at.month].to_s + " "
+    date += created_at.year.to_s
+    date
+  end
 end

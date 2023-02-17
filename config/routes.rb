@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root "groups#index"
+  root "home#index"
 
   resources :groups, only: [:index, :new, :create] do
     resources :transacs, only: [:index]
