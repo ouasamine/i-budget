@@ -40,7 +40,7 @@
 
 ## Live Demo 
 
-- [Live Demo Link](https://ibudget.onrender.com/groups/new)
+- [Live Demo Link](https://ibudget.onrender.com/)
 
 ## Getting Started 
 
