@@ -55,6 +55,7 @@ body {
   background-color: var(--sec-color);
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 section#first-page header {
@@ -168,6 +169,10 @@ div.top-card {
   background-color: #fff;
 }
 
+.form-wrapper a, .form-wrapper input[type="checkbox"] {
+  margin-left: 10px;
+}
+
 form {
   margin: 10px 0;
 }
@@ -177,6 +182,10 @@ form input {
   padding: 10px;
   border: 1px solid #a0a0a0;
   border-bottom: none;
+}
+
+form input:last-child {
+  border-bottom: 1px solid #a0a0a0;
 }
 
 form input[type="checkbox"] {
@@ -206,5 +215,21 @@ form select {
     section#first-page nav {
       position: absolute;
       bottom: 0;
+    }
+
+    .form-wrapper {
+      width: 60%;
+      height: 80vh;
+      max-width: 600px;
+      position: relative;
+      margin: 30px auto;
+      padding: 20px;
+      border: 1px solid #a0a0a0;
+      background-color: #f0f0f0;
+      box-shadow: 1px 10px 10px #a0a0a0;
+    }
+
+    .form-wrapper .bttn {
+      margin-left: -20px;
     }
 }
