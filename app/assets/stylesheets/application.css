@@ -29,8 +29,6 @@
 
 body {
   min-height: 100vh;
-  padding-bottom: 70px;
-  position: relative;
   background-color: #eaeaea;
   font-family: proxima-nova, sans-serif;
   color: var(--text-color);
@@ -189,4 +187,24 @@ form input[type="checkbox"] {
 form select {
   width: 100%;
   padding: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    section#first-page {
+      width: 60%;
+      max-width: 600px;
+      height: 100vh;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      border: 1px solid #a0a0a0;
+      position: relative;
+      background-color: #f0f0f0;
+      box-shadow: 1px 10px 10px #a0a0a0;
+    }
+
+    section#first-page nav {
+      position: absolute;
+      bottom: 0;
+    }
 }
