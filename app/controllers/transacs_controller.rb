@@ -19,6 +19,15 @@ class TransacsController < ApplicationController
     redirect_to group_transacs_path(transac_params[:group_id])
   end
 
+  def destroy
+    @transaction = Transac.find(params[:id])
+
+    return unless @transaction.destroy
+
+    flash[:success] = 'Transaction deleted successfully.'
+    redirect_to group_transacs_path(params[:group_id])
+  end
+
   private
 
   def transac_params

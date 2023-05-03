@@ -19,6 +19,7 @@
         </div>
         <div class="column last-col">
           <span class="sec-text"><%= transac.amount %></span>
+          <span><%= button_to image_tag("trash_icon.png"), group_transac_path(@group, transac), method: :delete, class: "delete-button butt-icon" %></span>
         </div>
       </div>
     <% end %>

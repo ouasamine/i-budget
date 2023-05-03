@@ -2,7 +2,7 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 
-const deleteBtns = document.querySelectorAll('.delete-group-button');
+const deleteBtns = document.querySelectorAll('.delete-button');
 
 deleteBtns.forEach((button) => {
   button.addEventListener('click', (event) => {

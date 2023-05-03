@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   root "home#index"
 
   resources :groups, only: [:index, :new, :create, :destroy] do
-    resources :transacs, only: [:index]
+    resources :transacs, only: [:index, :destroy]
   end
 
-  resources :transacs, only: [:new, :create, :destroy]
+  resources :transacs, only: [:new, :create]
 end
