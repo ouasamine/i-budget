@@ -5,9 +5,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "home#index"
 
-  resources :groups, only: [:index, :new, :create] do
+  resources :groups, only: [:index, :new, :create, :destroy] do
     resources :transacs, only: [:index]
   end
 
-  resources :transacs, only: [:new, :create]
+  resources :transacs, only: [:new, :create, :destroy]
 end

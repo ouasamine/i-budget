@@ -1,6 +1,6 @@
 class Group < ApplicationRecord
   belongs_to :user
-  has_many :transacs
+  has_many :transacs, dependent: :destroy
   validates :name, :user, presence: true
 
   def total_amount

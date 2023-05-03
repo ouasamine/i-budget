@@ -1,6 +1,6 @@
 <header id="page-header" class="title">
   <h1>Categories</h1>
-  <%= button_to image_tag("exit.png"), destroy_user_session_path, method: :delete, class: "butt-icon" %>
+  <%= button_to image_tag("exit.png"), destroy_user_session_path, method: :delete, class: "butt-icon categories-signout" %>
 </header>
 
 <section>
@@ -15,6 +15,7 @@
         </div>
         <div class="column last-col">
           <span class="sec-text"><%= group.total_amount %></span>
+          <span><%= button_to image_tag("trash_icon.png"), group_path(group.id), method: :delete, class: "delete-group-button butt-icon" %></span>
         </div>
       </div>
     </a>

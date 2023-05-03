@@ -116,6 +116,11 @@ header.title h1 {
 .butt-icon {
   background: none;
   border: none;
+  cursor: pointer;
+}
+
+.categories-signout {
+  transform: translate(-10vw, 0);
 }
 
 .butt-icon img {
@@ -260,5 +265,9 @@ form select {
 
     .transactions-container {
       box-shadow: 0 10px 10px #a0a0a0;
+    }
+
+    .categories-signout {
+      transform: translate(-14vw, 0);
     }
 }
