@@ -10,7 +10,7 @@
     <span class="sec-text"><%= @group.total_amount %></span>
   </div>
 
-  <div class="cards-container">
+  <div class="cards-container transactions-container">
     <% @group_transacs.each do |transac| %>
       <div class="card">
         <div class="column">
@@ -22,7 +22,6 @@
         </div>
       </div>
     <% end %>
+    <%= link_to "ADD TRANSACTION", new_transac_path, class: "bttn" %>
   </div>
-
-  <%= link_to "ADD TRANSACTION", new_transac_path, class: "bttn" %>
 </section>
