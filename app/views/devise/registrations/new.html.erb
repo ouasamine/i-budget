@@ -4,7 +4,6 @@
 
 <section class="form-wrapper" id="signup-form">
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field">
       <%= f.text_field :name, placeholder: "Name", autofocus: true, autocomplete: "name" %>
@@ -24,6 +23,8 @@
       <em>(<%= @minimum_password_length %> characters minimum)</em>
       <% end %><br />
     </div>
+
+    <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="actions">
       <%= f.submit "Sign up", class: "bttn"  %>
