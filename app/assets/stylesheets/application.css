@@ -90,6 +90,7 @@ section#first-page nav .bttn {
 }
 
 header#page-header {
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -121,12 +122,20 @@ header.title h1 {
   width: 25px !important;
 }
 
+.cards-container {
+  position: relative;
+  min-height: calc(100vh - 50px);
+  padding-bottom: 60px;
+  padding-top: 5px;
+}
+
 a.card-link-wrapper {
   text-decoration: none;
   color: var(--text-color);
 }
 
 div.card {
+  max-height: 150px;
   margin: 10px;
   padding: 10px;
   display: flex;
@@ -149,6 +158,11 @@ div.card .img-plchldr {
   width: 25%;
   margin-top: 0;
 }
+
+.img-plchldr img {
+  height: 100%;
+  width: 100%;
+} 
 
 div.card .last-col {
   width: 25%;
@@ -231,5 +245,12 @@ form select {
 
     .form-wrapper .bttn {
       margin-left: -20px;
+    }
+
+    .cards-container {
+      width: 60%;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px #a0a0a0;
     }
 }
